@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Games</title>
+    <style>
+.b1 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.b1:hover {
+  background-color: #FFC229;
+  box-shadow: #f7c2a8 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.b1:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .b1 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+.o1 {  font-size: 2vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <table align="center" border="2" height="100%" width="100%" style="background-image: url(back.jpg);">
+        <tr>           
+             <td align="center" height="100" width="100" colspan="3"><img src="logo.jpg" style="image-orientation: inherit; height: 4cm; width: 10cm; border-image-repeat: repeat;"> </td>
+        </tr>
+        <tr>
+            <td align="center" height="100" width="100"><h1 style="color: antiquewhite;">NAME OF GAME</h1></td>
+            <td align="center" height="100" width="100"><h1 style="color: antiquewhite;">ACTION</h1></td>
+            <td align="center" height="100" width="100"><h1 class="o1" style="color: antiquewhite;">RESULT</h1></td>
+        </tr>
+
+        <tr>
+            <td align="center" height="100" width="100"><h1 style="color: antiquewhite;">DICE</h1></td>
+            <td align="center" height="100" width="100"><button class="b1" onclick="diceG()">Click Me</button></td>
+            <td align="center" height="100" width="100"><h1 class="o1" id="g1" style="color: antiquewhite;"></h1></td>
+        </tr>
+        <tr>
+            <td align="center" height="100" width="100"><h1 style="color: antiquewhite;">OTP Generator</h1></td>
+            <td align="center" height="100" width="100"><button class="b1" onclick="otpG()">Click Me</button></td>
+            <td align="center" height="100" width="100"><h1 class="o1" id="g2" style="color: antiquewhite;"></h1></td>
+        </tr>
+        <tr>
+            <td align="center" height="100" width="100"><h1 style="color: antiquewhite;">LUNCH</h1></td>
+            <td align="center" height="100" width="100"><button class="b1" onclick="lunchG()">Click Me</button></td>
+            <td align="center" height="100" width="100" class="a"><h1 class="o1" id="g3" style="color: antiquewhite;"></h1></td>
+        </tr>
+        <tr>
+            <td align="center" height="100" width="100"><h1 style="color: antiquewhite;">CAPTCHA GENERATOR</h1></td>
+            <td align="center" height="100" width="100"><button class="b1" onclick="nameG()">Click Me</td>
+            <td align="center" height="100" width="100"><h1 class="o1" style="color: antiquewhite;" id="g4"></h1></td>
+        </tr>
+
+        <tr>
+            <td align="center" height="100" width="100"><h1 style="color: antiquewhite;">ROOCK PAPER AND SCISSOR</h1></td>
+            <td align="center" height="100" width="100"><button onclick="rps1G()" class="b1">Rock</button>
+                <button onclick="rps2G()" class="b1">Paper</button> <button onclick="rps3G()" class="b1">Scissor</button></td>
+            <td align="center" height="100" width="100"><h1 class="o1" style="color: antiquewhite;" id="g5"></h1></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
